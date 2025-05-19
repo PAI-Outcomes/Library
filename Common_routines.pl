@@ -7374,10 +7374,7 @@ sub get_rc_access_token {
   my $token   = '';
 
   my $RC_API_URL = "https://platform.ringcentral.com/restapi/oauth/token";
-  my $AuthKey    = "Basic NUJkUUxYMDhScS1oSTljbEFLcEIydzpWZHUySGtEeFR3YWJQS05MTGFOTDBBdW50dFhqTDhSbEc3ajJoaGdBMnJNZw==";
-
-  my $JWT = "eyJraWQiOiI4NzYyZjU5OGQwNTk0NGRiODZiZjVjYTk3ODA0NzYwOCIsInR5cCI6IkpXVCIsImFsZyI6IlJTMjU2In0.eyJhdWQiOiJodHRwczovL3BsYXRmb3JtLnJpbmdjZW50cmFsLmNvbS9yZXN0YXBpL29hdXRoL3Rva2VuIiwic3ViIjoiMTg2MzI1MDEwIiwiaXNzIjoiaHR0cHM6Ly9wbGF0Zm9ybS5yaW5nY2VudHJhbC5jb20iLCJleHAiOjM4NzIzNDgwMzQsImlhdCI6MTcyNDg2NDM4NywianRpIjoiVVV3aWpJeFFRX1c1Vk9sLWdOTGpBdyJ9.Q02Uiv_gp4CFwfMbh6_EX9sw0wvIW7ts5vkBxZ5FsStDuXovb9AXKTCEgde7kinyZTjVyagFSLiKi_qLVxtn4PPZtgPzocav51Rr76hayODtm90vLJWD4qCrrSOEfv9sNwgR2-ZHAinDogA0WBj4Rbqd1IHzItkYbtg4WIyTdZaSSer5bywSFTZmx2yEY3WMiXME4O8go-5_cjpbtKFstmWW9JvLowybSONrZoYa4aYa1ceg-EB1Mrwk52x0wKjbfbpJLX39gyxTsGS5MfQJ1v00fRIIL24c4sGgL8S7jLvPZS4A6zwaBfabc_OSZhLefOMG_HY5bnmMZ2fVBs7Rig";
-
+ 
   my $request =   POST "$RC_API_URL", 
     Content_Type   => 'application/x-www-form-urlencoded',
     Authorization  => "$AuthKey",
